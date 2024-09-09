@@ -30,7 +30,6 @@ SubDom Pro is a Python-based command-line tool designed to efficiently enumerate
    ```bash
    pip install -r requirements.txt
    ```
-   These dependencies are crucial for making HTTP requests and enhancing output readability, respectively.
 
 **Usage**
 
