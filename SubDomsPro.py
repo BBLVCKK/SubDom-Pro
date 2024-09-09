@@ -105,7 +105,7 @@ def main(target_url, timeout, save_to_file, color_output, wordlist, first_n=None
             test_url = word + "." + target_url
             response = request(test_url, timeout)
             
-            if response and response.status_code in [200, 301, 302, 307]:
+            if response and response.status_code in [200, 301, 302, 304, 307]:
                 discovered_subdomains.append(f"{test_url}")
                 working_subdomains[0] += 1
             
